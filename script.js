@@ -111,10 +111,11 @@ input.addEventListener("input", () => {
   createNewCards(newArray);
 });
 
-// adding events ion html elements dynamically
+// adding events o html elements dynamically
 allAtag.forEach((data) => {
   data.addEventListener("click", () => {
     selectedCategory = data.innerText;
+
     const newArray =
       selectedCategory === "EBS"
         ? cardsArray
